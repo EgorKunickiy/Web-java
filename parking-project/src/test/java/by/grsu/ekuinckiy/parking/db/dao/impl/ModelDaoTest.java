@@ -3,9 +3,11 @@ package by.grsu.ekuinckiy.parking.db.dao.impl;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import by.grsu.ekuinckiy.parking.db.dao.IDao;
-import by.grsu.ekuinckiy.parking.db.model.Brand;
-import by.grsu.ekuinckiy.parking.db.model.Model;
+import by.grsu.ekunickiy.parking.db.dao.IDao;
+import by.grsu.ekunickiy.parking.db.dao.impl.BrandDaoImpl;
+import by.grsu.ekunickiy.parking.db.dao.impl.ModelDaoImpl;
+import by.grsu.ekunickiy.parking.db.model.Brand;
+import by.grsu.ekunickiy.parking.db.model.Model;
 
 public class ModelDaoTest extends AbstractTest {
 	private static final IDao<Integer, Brand> brandDao = BrandDaoImpl.INSTANCE;

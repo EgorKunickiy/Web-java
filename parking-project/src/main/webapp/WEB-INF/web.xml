@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                      http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	version="4.0">
+
+	<listener>
+		<listener-class>by.grsu.ekunickiy.parking.web.context.AppStartupListener</listener-class>
+	</listener>
+	
+	<servlet>
+		<servlet-name>BrandServlet</servlet-name>
+		<servlet-class>by.grsu.ekunickiy.parking.web.servlet.BrandServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>PlaceServlet</servlet-name>
+		<servlet-class>by.grsu.ekunickiy.parking.web.servlet.PlaceServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>UserServlet</servlet-name>
+		<servlet-class>by.grsu.ekunickiy.parking.web.servlet.UserServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>ModelServlet</servlet-name>
+		<servlet-class>by.grsu.ekunickiy.parking.web.servlet.ModelServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>BrandServletPrim</servlet-name>
+		<servlet-class>by.grsu.ekunickiy.parking.web.servlet.BrandServletPrim</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>CarServlet</servlet-name>
+		<servlet-class>by.grsu.ekunickiy.parking.web.servlet.CarServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>Car2PlaceServlet</servlet-name>
+		<servlet-class>by.grsu.ekunickiy.parking.web.servlet.Car2PlaceServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>CarServlet</servlet-name>
+		<url-pattern>/car</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>ModelServlet</servlet-name>
+		<url-pattern>/model</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>BrandServlet</servlet-name>
+		<url-pattern>/brand</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>PlaceServlet</servlet-name>
+		<url-pattern>/place</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>Car2PlaceServlet</servlet-name>
+		<url-pattern>/car2place</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>BrandServletPrim</servlet-name>
+		<url-pattern>/brandPrim</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>UserServlet</servlet-name>
+		<url-pattern>/user</url-pattern>
+	</servlet-mapping>
+
+</web-app>

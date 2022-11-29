@@ -3,13 +3,19 @@ package by.grsu.ekuinckiy.parking.db.dao.impl;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import by.grsu.ekuinckiy.parking.db.dao.IDao;
-import by.grsu.ekuinckiy.parking.db.model.Car;
-import by.grsu.ekuinckiy.parking.db.model.Car2Place;
-import by.grsu.ekuinckiy.parking.db.model.Place;
-import by.grsu.ekuinckiy.parking.db.model.Model;
-import by.grsu.ekuinckiy.parking.db.model.Brand;
-import by.grsu.ekuinckiy.parking.db.model.User;
+import by.grsu.ekunickiy.parking.db.dao.IDao;
+import by.grsu.ekunickiy.parking.db.dao.impl.BrandDaoImpl;
+import by.grsu.ekunickiy.parking.db.dao.impl.Car2PlaceDaoImpl;
+import by.grsu.ekunickiy.parking.db.dao.impl.CarDaoImpl;
+import by.grsu.ekunickiy.parking.db.dao.impl.ModelDaoImpl;
+import by.grsu.ekunickiy.parking.db.dao.impl.PlaceDaoImpl;
+import by.grsu.ekunickiy.parking.db.dao.impl.UserDaoImpl;
+import by.grsu.ekunickiy.parking.db.model.Brand;
+import by.grsu.ekunickiy.parking.db.model.Car;
+import by.grsu.ekunickiy.parking.db.model.Car2Place;
+import by.grsu.ekunickiy.parking.db.model.Model;
+import by.grsu.ekunickiy.parking.db.model.Place;
+import by.grsu.ekunickiy.parking.db.model.User;
 
 public class Car2PlaceDaoTest extends AbstractTest {
     private static final IDao<Integer, Car2Place> car_2_placeDao = Car2PlaceDaoImpl.INSTANCE;

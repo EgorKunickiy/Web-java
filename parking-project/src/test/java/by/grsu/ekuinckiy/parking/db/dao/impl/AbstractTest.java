@@ -5,7 +5,8 @@ import java.util.Date;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
-import by.grsu.ekuinckiy.parking.db.dao.AbstractDao;
+
+import by.grsu.ekunickiy.parking.db.dao.AbstractDao;
 
 
 public abstract class AbstractTest {
